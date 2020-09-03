@@ -13,7 +13,7 @@
     'use strict';
     var vid = document.getElementsByClassName("video")[0];
     var vid_url = vid.attributes['data-metadata'].value.toString().match("https:\/\/edx-video.net\/.*\.mp4")[0];
-    console.log(vid_url);
+    console.log("The video is: " +vid_url);
     var vid_title = vid.previousElementSibling.innerText;
     var zNode = document.createElement ('div');
     zNode.innerHTML = '<button id="myButton" type="button"><a href=' + vid_url + '>Download ' + vid_title + ' lecture video</a></button>';
